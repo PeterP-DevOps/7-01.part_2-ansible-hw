@@ -1,0 +1,16 @@
+---
+- name: Change system MOTD with host info
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Set MOTD with IP, hostname and greeting
+      copy:
+        dest: /etc/motd
+        content: |
+          Hostname: {{ ansible_hostname }}
+          IP Address: {{ ansible_default_ipv4.address }}
+          Хорошего дня, системный администратор!
+        owner: root
+        group: root
+        mode: '0644'
