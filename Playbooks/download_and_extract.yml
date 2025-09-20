@@ -1,0 +1,22 @@
+--
+- name: Download and extract archive
+  hosts: all
+  become: yes
+  tasks:
+    - name: Ensure destination directory exists
+      file:
+        path: /opt/kafka
+        state: directory
+        mode: '0755'
+
+    - name: Download Apache Kafka archive
+      get_url:
+        url: https://archive.apache.org/dist/kafka/3.7.0/kafka_2.13-3.7.0.tgz
+        dest: /tmp/kafka.tgz
+        mode: '0644'
+
+    - name: Extract Kafka archive
+      unarchive:
+        src: /tmp/kafka.tgz
+        dest: /opt/kafka
+        remote_src: yes

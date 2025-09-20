@@ -1,0 +1,14 @@
+---
+- name: Change MOTD
+  hosts: all
+  become: yes
+  vars:
+    motd_message: "Приветствую, дорогой друг!!"
+  tasks:
+    - name: Update /etc/motd with custom message
+      copy:
+        content: "{{ motd_message }}\n"
+        dest: /etc/motd
+        owner: root
+        group: root
+        mode: '0644'
