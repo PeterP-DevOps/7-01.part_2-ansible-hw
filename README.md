@@ -9,21 +9,21 @@
 3. Изменить приветствие системы (motd) при входе на любое другое. Пожалуйста, в этом задании используйте переменную для задания приветствия. Переменную можно задавать любым удобным способом.
 
 ### Решение 1
-1. [Первый плейбук](/home/docker-virt/7-01.part_2-ansible-hw/Playbooks/download_and_extract.yml)
+1. [Первый плейбук](Playbooks/download_and_extract.yml)
 
 Результат выполнения плейбука:
-![Результат работы первого плейбука](/home/docker-virt/7-01.part_2-ansible-hw/img/1.1.png)
+![Результат работы первого плейбука](img/1.1.png)
 
-2. [Второй плейбук](/home/docker-virt/7-01.part_2-ansible-hw/Playbooks/install_tuned.yml)
+2. [Второй плейбук](Playbooks/install_tuned.yml)
 
 Результат выполнения плейбука:
-![Установка и запуск tuned](/home/docker-virt/7-01.part_2-ansible-hw/img/1.2.png)
-![tuned запущен](/home/docker-virt/7-01.part_2-ansible-hw/img/1.2.1.png)
-![Проверка автоматического запуска при загрузке системы](/home/docker-virt/7-01.part_2-ansible-hw/img/1.2.2.png)
+![Установка и запуск tuned](img/1.2.png)
+![tuned запущен](img/1.2.1.png)
+![Проверка автоматического запуска при загрузке системы](img/1.2.2.png)
 
-2. [Третий плейбук](/home/docker-virt/7-01.part_2-ansible-hw/Playbooks/change_motd.yml)
-![Третий плейбук запущен](/home/docker-virt/7-01.part_2-ansible-hw/img/1.3.1.png)
-![Результат работы третьего плейбука](/home/docker-virt/7-01.part_2-ansible-hw/img/1.3.2.png)
+2. [Третий плейбук](Playbooks/change_motd.yml)
+![Третий плейбук запущен](img/1.3.1.png)
+![Результат работы третьего плейбука](img/1.3.2.png)
 
 ### Задание 2
 Выполните действия, приложите файлы с модифицированным плейбуком и вывод выполнения.
@@ -31,9 +31,9 @@
 Модифицируйте плейбук из пункта 3, задания 1. В качестве приветствия он должен установить IP-адрес и hostname управляемого хоста, пожелание хорошего дня системному администратору.
 
 ### Решение 2
-[Модифицированный плейбук из задания 1.3](/home/docker-virt/7-01.part_2-ansible-hw/Playbooks/download_and_extract.yml)
-![Плейбук запущен](/home/docker-virt/7-01.part_2-ansible-hw/img/2.1.png)
-![Результат работы плейбука](/home/docker-virt/7-01.part_2-ansible-hw/img/2.2.png)
+[Модифицированный плейбук из задания 1.3](Playbooks/download_and_extract.yml)
+![Плейбук запущен](img/2.1.png)
+![Результат работы плейбука](img/2.2.png)
 
 ### Задание 3
 
